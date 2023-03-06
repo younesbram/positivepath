@@ -14,7 +14,7 @@ Currently using https://platform.openai.com/docs/guides/chat gpt-3.5-turbo
 # Contributing
 If you would like to contribute to PositivePath, please fork the repository and create a pull request with your changes.
 """
-
+openai.api_key = os.getenv("OPENAI_API_KEY")
 # Main function to generate passages
 def generate_passages(topic):
     # A faked few-shot conversation to prime the model into becoming a positive spiritual guide
