@@ -5,6 +5,11 @@ import streamlit as st
 
 PositivePath is a web application that generates passages related to the user's input from religious texts and applies ethical frameworks. The app provides users with positive and inspirational content that is relevant to their topic.
 """
+st.set_page_config(page_title="Ethics", page_icon="💭", layout="centered", initial_sidebar_state="auto", menu_items={
+    "Get Help": "https://www.github.com/younesbram/aicomedy",
+    "Report a bug": "https://www.younes.ca/contact",
+    "About": "# Ethical frameworks applied to everyday dilemmas",
+},)
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 # Main function to generate passages
 def generate_passages(topic):
